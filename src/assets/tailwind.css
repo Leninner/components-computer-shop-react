@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.login {
+  @apply w-full h-screen grid place-items-center;
+}
+
+.form-container {
+  @apply grid grid-rows-1 w-80;
+}
+
+.title {
+  @apply text-lg mb-3 text-center;
+}
+
+.subtitle {
+  @apply font-light mt-0 mb-2 text-center text-base text-very-light-pink;
+}
+
+.input {
+  @apply bg-text-input-field border-none rounded-lg h-8 p-2 mb-3 text-base;
+}
+
+.primary-button {
+  @apply bg-hospital-green rounded-lg border-none text-white w-full cursor-pointer text-base font-bold h-12 mt-4 mb-8;
+}
+
+.logo {
+  @apply w-36 mb-12 justify-self-center sm:hidden block;
+}
