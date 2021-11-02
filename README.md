@@ -18,5 +18,5 @@ tailwind.config.js
 o en
 
 ```bash
-tailwind.css  => En el caso de este proyecto
+tailwind.css (En el caso de este proyecto)
 ```
