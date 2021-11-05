@@ -104,3 +104,7 @@ nav {
 .notFound {
   @apply w-40 p-2 mt-5 font-bold text-black rounded bg-red-50 hover:bg-gray-400;
 }
+
+.page404 {
+  @apply w-screen h-screen bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500;
+}

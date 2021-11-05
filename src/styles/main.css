@@ -30313,6 +30313,16 @@ nav {
   color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
+.page404 {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #fbbf24;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 191, 36, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #ef4444, var(--tw-gradient-to, rgba(239, 68, 68, 0));
+  --tw-gradient-to: #ec4899;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
