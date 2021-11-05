@@ -9,14 +9,14 @@ import { NotFound } from '../pages/NotFound';
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Layout>
+      <Layout>
+        <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/recovery-password' element={<RecoveryPassword />}></Route>
+          <Route path='/recovery-password' element={<RecoveryPassword />} />
           <Route path='*' element={<NotFound />} />
-        </Layout>
-      </Routes>
+        </Routes>
+      </Layout>
     </BrowserRouter>
   );
 };
