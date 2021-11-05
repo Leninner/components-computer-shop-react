@@ -98,3 +98,9 @@ nav {
 .navbar-shopping-cart div {
   @apply w-4 h-4 bg-hospital-green rounded-middle text-sm font-bold absolute flex justify-center items-center -top-2 -right-1;
 }
+
+/* Not Found */
+
+.notFound {
+  @apply w-40 p-2 mt-5 font-bold text-black rounded bg-red-50 hover:bg-gray-400;
+}
