@@ -15,6 +15,13 @@ module.exports = {
       borderRadius: {
         middle: '50%',
       },
+      borderColor: {
+        'very-light-pink': '#C7C7C7',
+        'hospital-green': '#acd9b2',
+      },
+      borderWidth: {
+        1: '1px',
+      },
     },
   },
 };

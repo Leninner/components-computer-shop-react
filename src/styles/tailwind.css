@@ -53,3 +53,48 @@
 .login-button {
   @apply mt-4 mb-8;
 }
+
+/* Header */
+
+nav {
+  @apply flex justify-between px-6 border-1 border-solid border-very-light-pink;
+}
+
+.menu {
+  @apply block sm:hidden;
+}
+
+.navbar-left ul,
+.navbar-right ul {
+  @apply list-none p-0 m-0 flex items-center h-16;
+}
+
+.navbar-left {
+  @apply flex items-center;
+}
+
+.navbar-left ul {
+  @apply hidden sm:ml-3 sm:flex;
+}
+
+.navbar-left ul li a,
+.navbar-right ul li a {
+  @apply no-underline text-very-light-pink border-solid border-white border-1 p-2 rounded-lg;
+}
+
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+  @apply border-1 border-solid border-hospital-green text-hospital-green;
+}
+
+.navbar-email {
+  @apply text-very-light-pink text-sm mr-3 hidden sm:block;
+}
+
+.navbar-shopping-cart {
+  @apply relative;
+}
+
+.navbar-shopping-cart div {
+  @apply w-4 h-4 bg-hospital-green rounded-middle text-sm font-bold absolute flex justify-center items-center -top-2 -right-1;
+}

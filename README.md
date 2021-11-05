@@ -20,3 +20,5 @@ o en
 ```bash
 tailwind.css (En el caso de este proyecto)
 ```
+
+NOTES:
