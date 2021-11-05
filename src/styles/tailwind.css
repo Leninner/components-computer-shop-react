@@ -7,11 +7,11 @@
 }
 
 .form-container {
-  @apply grid grid-rows-1 w-80;
+  @apply grid grid-rows-1 w-80 justify-items-center;
 }
 
 .title {
-  @apply text-lg mb-3 text-center;
+  @apply text-lg mb-3 text-center font-bold;
 }
 
 .subtitle {
@@ -28,4 +28,28 @@
 
 .logo {
   @apply w-36 mb-12 justify-self-center sm:hidden block;
+}
+
+.email-image {
+  @apply w-32 h-32 rounded-middle bg-text-input-field flex justify-center items-center mb-6;
+}
+
+.email-image img {
+  @apply w-20;
+}
+
+.resend {
+  @apply text-sm;
+}
+
+.resend span {
+  @apply text-very-light-pink;
+}
+
+.resend a {
+  @apply text-hospital-green no-underline;
+}
+
+.login-button {
+  @apply mt-4 mb-8;
 }

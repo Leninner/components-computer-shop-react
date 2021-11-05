@@ -9,14 +9,14 @@ const Login = () => {
         <h1 className='title'>Create a new password</h1>
         <p className='subtitle'>Enter a new passwrd for your account</p>
 
-        <form action='/' className='form flex flex-col'>
-          <label for='password' className='label font-bold mb-1 text-base'>
+        <form action='/' className='flex flex-col form'>
+          <label for='password' className='mb-1 text-base font-bold label'>
             Password
           </label>
 
           <input type='password' id='password' placeholder='*********' className='input input-password' />
 
-          <label for='new-password' className='label font-bold mb-1 text-base'>
+          <label for='new-password' className='mb-1 text-base font-bold label'>
             Password
           </label>
           <input type='password' id='new-password' placeholder='*********' className='input input-password' />
