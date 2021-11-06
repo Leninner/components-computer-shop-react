@@ -30381,6 +30381,12 @@ nav {
   color: rgba(172, 217, 178, var(--tw-text-opacity));
 }
 
+/* My Account */
+
+.input-name, .input-email, .input-password {
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

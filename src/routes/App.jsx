@@ -7,6 +7,7 @@ import { Home } from '../pages/Home';
 import { NotFound } from '../pages/NotFound';
 import { Checkout } from '../pages/Checkout';
 import { CreateAccount } from '../pages/CreateAccount';
+import { MyAccount } from '../pages/MyAccount';
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
           <Route path='/recovery-password' element={<RecoveryPassword />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/create-account' element={<CreateAccount />} />
-          <Route path='/recovery-password' element={<RecoveryPassword />} />
+          <Route path='/my-account' element={<MyAccount />} />
           <Route path='/recovery-password' element={<RecoveryPassword />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

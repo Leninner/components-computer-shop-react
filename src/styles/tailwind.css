@@ -134,3 +134,11 @@ nav {
 .secondary-botton {
   @apply bg-white rounded-lg border border-solid border-hospital-green text-hospital-green w-full cursor-pointer text-lg font-bold h-12;
 }
+
+/* My Account */
+
+.input-name,
+.input-email,
+.input-password {
+  @apply mb-6;
+}
