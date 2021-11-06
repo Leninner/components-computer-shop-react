@@ -30323,6 +30323,64 @@ nav {
   --tw-gradient-to: #ec4899;
 }
 
+/* Create Account */
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form a {
+  margin-bottom: 3.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(172, 217, 178, var(--tw-text-opacity));
+  text-decoration: none;
+}
+
+.label {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+.input {
+  margin-bottom: 0.75rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgba(247, 247, 247, var(--tw-bg-opacity));
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.input-email {
+  margin-bottom: 1.5rem;
+}
+
+.secondary-botton {
+  height: 3rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgba(172, 217, 178, var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(172, 217, 178, var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

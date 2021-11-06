@@ -17,7 +17,7 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/recovery-password' element={<RecoveryPassword />} />
           <Route path='/checkout' element={<Checkout />} />
-          <Route path='/create-new-account' element={<CreateAccount />} />
+          <Route path='/create-account' element={<CreateAccount />} />
           <Route path='/recovery-password' element={<RecoveryPassword />} />
           <Route path='/recovery-password' element={<RecoveryPassword />} />
           <Route path='*' element={<NotFound />} />

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .login {
-  @apply w-full h-screen grid place-items-center;
+  @apply grid w-full h-screen place-items-center;
 }
 
 .form-container {
@@ -11,27 +11,27 @@
 }
 
 .title {
-  @apply text-lg mb-3 text-center font-bold;
+  @apply mb-3 text-lg font-bold text-center;
 }
 
 .subtitle {
-  @apply font-light mt-0 mb-2 text-center text-base text-very-light-pink;
+  @apply mt-0 mb-2 text-base font-light text-center text-very-light-pink;
 }
 
 .input {
-  @apply bg-text-input-field border-none rounded-lg h-8 p-2 mb-3 text-base;
+  @apply h-8 p-2 mb-3 text-base border-none rounded-lg bg-text-input-field;
 }
 
 .primary-button {
-  @apply bg-hospital-green rounded-lg border-none text-white w-full cursor-pointer text-base font-bold h-12 mt-4 mb-8;
+  @apply w-full h-12 mt-4 mb-8 text-base font-bold text-white border-none rounded-lg cursor-pointer bg-hospital-green;
 }
 
 .logo {
-  @apply w-36 mb-12 justify-self-center sm:hidden block;
+  @apply block mb-12 w-36 justify-self-center sm:hidden;
 }
 
 .email-image {
-  @apply w-32 h-32 rounded-middle bg-text-input-field flex justify-center items-center mb-6;
+  @apply flex items-center justify-center w-32 h-32 mb-6 rounded-middle bg-text-input-field;
 }
 
 .email-image img {
@@ -47,7 +47,7 @@
 }
 
 .resend a {
-  @apply text-hospital-green no-underline;
+  @apply no-underline text-hospital-green;
 }
 
 .login-button {
@@ -57,7 +57,7 @@
 /* Header */
 
 nav {
-  @apply flex justify-between px-6 border-1 border-solid border-very-light-pink;
+  @apply flex justify-between px-6 border-solid border border-very-light-pink;
 }
 
 .menu {
@@ -66,7 +66,7 @@ nav {
 
 .navbar-left ul,
 .navbar-right ul {
-  @apply list-none p-0 m-0 flex items-center h-16;
+  @apply flex items-center h-16 p-0 m-0 list-none;
 }
 
 .navbar-left {
@@ -79,16 +79,16 @@ nav {
 
 .navbar-left ul li a,
 .navbar-right ul li a {
-  @apply no-underline text-very-light-pink border-solid border-white border-1 p-2 rounded-lg;
+  @apply p-2 no-underline border-white border-solid rounded-lg text-very-light-pink border;
 }
 
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
-  @apply border-1 border-solid border-hospital-green text-hospital-green;
+  @apply border-solid border border-hospital-green text-hospital-green;
 }
 
 .navbar-email {
-  @apply text-very-light-pink text-sm mr-3 hidden sm:block;
+  @apply hidden mr-3 text-sm text-very-light-pink sm:block;
 }
 
 .navbar-shopping-cart {
@@ -96,7 +96,7 @@ nav {
 }
 
 .navbar-shopping-cart div {
-  @apply w-4 h-4 bg-hospital-green rounded-middle text-sm font-bold absolute flex justify-center items-center -top-2 -right-1;
+  @apply absolute flex items-center justify-center w-4 h-4 text-sm font-bold bg-hospital-green rounded-middle -top-2 -right-1;
 }
 
 /* Not Found */
@@ -107,4 +107,30 @@ nav {
 
 .page404 {
   @apply w-screen h-screen bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500;
+}
+
+/* Create Account */
+
+.form {
+  @apply flex flex-col;
+}
+
+.form a {
+  @apply text-hospital-green text-sm text-center no-underline mb-14;
+}
+
+.label {
+  @apply text-sm font-bold mb-1;
+}
+
+.input {
+  @apply bg-text-input-field border-none rounded-lg h-8 text-lg p-2 mb-3;
+}
+
+.input-email {
+  @apply mb-6;
+}
+
+.secondary-botton {
+  @apply bg-white rounded-lg border border-solid border-hospital-green text-hospital-green w-full cursor-pointer text-lg font-bold h-12;
 }
