@@ -1,1 +1,57 @@
 @import './Vars.scss';
+
+.page404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #ff5f6d;
+  background: -webkit-linear-gradient(to right, #ffc371, #ff5f6d);
+  background: linear-gradient(to right, #ffc371, #ff5f6d);
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      font-size: 13rem;
+      margin: 0;
+      margin-bottom: 60px;
+      animation: spin 1s linear infinite;
+    }
+
+    h3 {
+      font-size: 21px;
+      color: white;
+      font-weight: 200;
+    }
+
+    button {
+      width: 50%;
+      text-align: center;
+      height: 50px;
+      border-radius: 25px;
+      border-style: none;
+      font-size: 17px;
+      font-weight: normal;
+      background-color: var(--hospital-green);
+    }
+
+    button:hover {
+      border: none;
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
