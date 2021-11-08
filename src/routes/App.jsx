@@ -10,6 +10,7 @@ import { NotFound } from '../pages/NotFound';
 import { MyAccount } from '../pages/MyAccount';
 import { NewPassword } from '../pages/NewPassword';
 import { Orders } from '../pages/Orders';
+import { SendEmail } from '../pages/SendEmail';
 import '../styles/global.scss';
 
 const App = () => {
@@ -21,10 +22,10 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/recovery-password' element={<RecoveryPassword />} />
           <Route path='/pay' element={<Checkout />} />
-          <Route paath='/new-account' element={<CreateAccount />} />
-          <Route paath='/account' element={<MyAccount />} />
-          <Route paath='/new-password' element={<NewPassword />} />
-          <Route paath='/carrito' element={<Orders />} />
+          <Route path='/new-account' element={<CreateAccount />} />
+          <Route path='/account' element={<MyAccount />} />
+          <Route path='/new-password' element={<NewPassword />} />
+          <Route path='/carrito' element={<Orders />} />
           <Route path='/send-email' element={<SendEmail />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

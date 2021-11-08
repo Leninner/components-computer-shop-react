@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/OrderItem.scss';
 
-const OrdenItem = () => {
+const OrderItem = () => {
   return (
     <div className='OrderItem'>
       <figure>
@@ -17,4 +17,4 @@ const OrdenItem = () => {
   );
 };
 
-export { OrdenItem };
+export { OrderItem };

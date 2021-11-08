@@ -24,4 +24,4 @@ const NewPassword = () => {
   );
 };
 
-export default NewPassword;
+export { NewPassword };
