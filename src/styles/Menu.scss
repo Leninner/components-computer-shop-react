@@ -6,6 +6,9 @@
   border: 1px solid var(--very-light-pink);
   border-radius: 6px;
   padding: 20px 20px 0 20px;
+  position: absolute; //Permite desanclar de la estructura que tiene
+  top: 60px;
+  right: 50px;
 }
 .Menu ul {
   list-style: none;
@@ -32,4 +35,11 @@
   text-decoration: none;
   margin-bottom: 20px;
   display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .Menu {
+    top: 60px;
+    left: 0;
+  }
 }
