@@ -8,6 +8,7 @@
   position: absolute;
   right: 0;
   background-color: var(--white);
+  animation: swipeLeft 0.26s ease;
 }
 .title-container {
   display: flex;
@@ -57,5 +58,14 @@
 @media (max-width: 640px) {
   .MyOrder {
     width: 100%;
+  }
+}
+
+@keyframes swipeLeft {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 360px;
   }
 }
