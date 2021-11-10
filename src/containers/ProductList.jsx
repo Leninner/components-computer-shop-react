@@ -11,7 +11,7 @@ const ProductList = () => {
     <section className='main-container'>
       <div className='ProductList'>
         {products.map((product) => (
-          <ProductItem key={product.id} product={product} />
+          <ProductItem key={product.id + Math.random} product={product} />
         ))}
       </div>
     </section>

@@ -22,7 +22,7 @@ const MyOrder = () => {
       </div>
       <div className='my-order-content'>
         {state.cart.map((item) => (
-          <OrderItem product={item} key={`order-item-${item.id}`} />
+          <OrderItem product={item} key={`order-item-${Math.random() + item.id}`} />
         ))}
         <div className='order'>
           <p>
