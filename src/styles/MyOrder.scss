@@ -3,9 +3,11 @@
 .MyOrder {
   width: 360px;
   padding: 24px;
+  top: 60px;
   box-sizing: border-box;
   position: absolute;
   right: 0;
+  background-color: var(--white);
 }
 .title-container {
   display: flex;
