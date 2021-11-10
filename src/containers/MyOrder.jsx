@@ -21,9 +21,6 @@ const MyOrder = () => {
         <p className='title'>My order</p>
       </div>
       <div className='my-order-content'>
-        {state.cart.map((item) => (
-          <OrderItem product={item} key={`order-item-${Math.random() + item.id}`} />
-        ))}
         <div className='order'>
           <p>
             <span>Total</span>
@@ -31,6 +28,9 @@ const MyOrder = () => {
           <p>${sumTotal()},00</p>
         </div>
         <button className='primary-button'>Checkout</button>
+        {state.cart.map((item) => (
+          <OrderItem product={item} key={`order-item-${Math.random() + item.id}`} />
+        ))}
       </div>
     </aside>
   );

@@ -7,8 +7,41 @@
   box-sizing: border-box;
   position: absolute;
   right: 0;
+  height: calc(100vh - 160px);
+  border-bottom: 1px solid var(--very-light-pink);
+  border-top: 1px solid var(--very-light-pink);
+  border-left: 1px solid var(--very-light-pink);
+  overflow: auto;
+  scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
   background-color: var(--white);
   animation: swipeLeft 0.26s ease;
+  animation: oppacity 0.26s ease;
+}
+.MyOrder::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.MyOrder::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.MyOrder::-webkit-scrollbar-button:increment,
+.MyOrder::-webkit-scrollbar-button {
+  display: none;
+}
+
+.MyOrder::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.MyOrder::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.MyOrder::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 .title-container {
   display: flex;
@@ -45,6 +78,7 @@
 }
 
 .primary-button {
+  margin-bottom: 24px;
   background-color: var(--hospital-green);
   border-radius: 8px;
   border: none;
@@ -58,6 +92,7 @@
 @media (max-width: 640px) {
   .MyOrder {
     width: 100%;
+    animation: none;
   }
 }
 
@@ -67,5 +102,14 @@
   }
   100% {
     width: 360px;
+  }
+}
+
+@keyframes oppacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
