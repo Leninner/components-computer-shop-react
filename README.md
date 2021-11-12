@@ -37,4 +37,4 @@ Vars.scss
 
 > Leer código de otros Devs es muy valioso porque el contexto que se tiene sobre una solución cambia de una manera radical. Se pueden crear nuevas conexiones neuronales cada vez que leemos código de otros devs. NO COPIAR.
 
-## Tengo la capacidad de resolver problemas, no debo desanimarme.
+## Tengo la capacidad de resolver problemas, no debo desanimarme
