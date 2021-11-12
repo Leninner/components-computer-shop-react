@@ -49,7 +49,7 @@ const Header = () => {
       <div className='navbar-right'>
         <ul>
           <li className='navbar-email' onClick={() => handleToggle([toggle, setToggle])}>
-            platzi@example.com
+            lenin@selecta.com
           </li>
           <li className='navbar-shopping-cart' onClick={() => handleToggle([toggleOrders, setToggleOrders])}>
             <img src={shoppingCart} alt='shopping cart' />

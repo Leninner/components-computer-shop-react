@@ -51,6 +51,7 @@
   margin-right: 14px;
 }
 .title {
+  cursor: pointer;
   font-size: var(--lg);
   font-weight: bold;
 }
@@ -61,6 +62,7 @@
   overflow-y: scroll;
 }
 .order {
+  cursor: default;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 16px;
