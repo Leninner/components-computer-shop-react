@@ -1,16 +1,25 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import '@styles/ProductItem.scss';
 import addCart from '@icons/bt_add_to_cart.svg';
 import addedToCart from '@icons/bt_added_to_cart.svg';
 import { AppContext } from '@context/AppContext';
 
 const ProductItem = ({ product }) => {
-  const { addToCart } = useContext(AppContext);
-  const [addedCart, setAddedCart] = React.useState(false);
+  const { addToCart, removeFromCart } = useContext(AppContext);
+
+  const [added, setAdded] = useState(true);
 
   const handleClick = (item) => {
     addToCart(item);
-    setAddedCart(!addedCart);
+  };
+
+  const handleRemove = (item) => {
+    removeFromCart(item);
+  };
+
+  const handleAdded = (item) => {
+    added ? handleClick(item) : handleRemove(item);
+    setAdded(!added);
   };
 
   return (
@@ -21,8 +30,8 @@ const ProductItem = ({ product }) => {
           <p>${product.price},00</p>
           <p>{product.title}</p>
         </div>
-        <figure onClick={() => handleClick(product)}>
-          <img src={addedCart ? addedToCart : addCart} alt='' />
+        <figure onClick={() => handleAdded(product)}>
+          <img src={added ? addCart : addedToCart} alt='' />
         </figure>
       </div>
     </div>
@@ -30,3 +39,5 @@ const ProductItem = ({ product }) => {
 };
 
 export { ProductItem };
+
+// TODO: Resolve the issue with the addedToCart icon
