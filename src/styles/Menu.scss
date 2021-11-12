@@ -1,7 +1,7 @@
 @import 'Vars';
 
 .Menu {
-  width: 100px;
+  width: 130px;
   height: auto;
   border: 1px solid var(--very-light-pink);
   border-radius: 6px;
@@ -17,7 +17,7 @@
   margin: 0;
 }
 .Menu ul li {
-  text-align: end;
+  text-align: start;
 }
 .Menu ul li:nth-child(1),
 .Menu ul li:nth-child(2) {
@@ -40,7 +40,9 @@
 
 @media (max-width: 768px) {
   .Menu {
-    top: 60px;
+    position: absolute;
     left: 0;
+    top: calc(60px + 350px);
+    width: 200px;
   }
 }

@@ -6,10 +6,12 @@ import shoppingCart from '@icons/icon_shopping_cart.svg';
 import { Menu } from '@components/Menu';
 import { AppContext } from '@context/AppContext';
 import { MyOrder } from '@containers/MyOrder';
+import { MenuMobile } from '@components/MenuMobile';
 
 const Header = () => {
   const [toggle, setToggle] = React.useState(false);
   const [toggleOrders, setToggleOrders] = React.useState(false);
+  const [toggleMenuMobile, setToggleMenuMobile] = React.useState(false);
 
   const { state } = useContext(AppContext);
 
@@ -19,7 +21,13 @@ const Header = () => {
 
   return (
     <nav>
-      <img src={menu} alt='menu' className='menu' onClick={() => handleToggle([toggle, setToggle])} />
+      <img
+        src={menu}
+        alt='menu'
+        className='menu'
+        onClick={() => handleToggle([toggleMenuMobile, setToggleMenuMobile])}
+      />
+      {toggleMenuMobile && <MenuMobile />}
 
       <div className='navbar-left'>
         <img src={logo} alt='logo' className='nav-logo' />
