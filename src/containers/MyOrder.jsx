@@ -28,9 +28,11 @@ const MyOrder = () => {
           <p>${sumTotal()},00</p>
         </div>
         <button className='primary-button'>Checkout</button>
-        {state.cart.map((item) => (
-          <OrderItem product={item} key={`order-item-${Math.random() + item.id}`} />
-        ))}
+        <div className='orders-container'>
+          {state.cart.map((item) => (
+            <OrderItem product={item} key={`order-item-${Math.random() + item.id}`} />
+          ))}
+        </div>
       </div>
     </aside>
   );
