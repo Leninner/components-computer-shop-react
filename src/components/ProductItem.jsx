@@ -5,11 +5,9 @@ import addedToCart from '@icons/bt_added_to_cart.svg';
 import { AppContext } from '@context/AppContext';
 
 const ProductItem = ({ product }) => {
-  const { addToCart, removeFromCart } = useContext(AppContext);
+  const { state, addToCart, removeFromCart } = useContext(AppContext);
 
-  const [added, setAdded] = useState(true);
-
-  const handleClick = (item) => {
+  const handleAdd = (item) => {
     addToCart(item);
   };
 
@@ -17,9 +15,12 @@ const ProductItem = ({ product }) => {
     removeFromCart(item);
   };
 
-  const handleAdded = (item) => {
-    added ? handleClick(item) : handleRemove(item);
-    setAdded(!added);
+  const toggleCart = (item) => {
+    if (state.cart.includes(item)) {
+      handleRemove(item);
+    } else {
+      handleAdd(item);
+    }
   };
 
   return (
@@ -30,8 +31,8 @@ const ProductItem = ({ product }) => {
           <p>${product.price},00</p>
           <p>{product.title}</p>
         </div>
-        <figure onClick={() => handleAdded(product)}>
-          <img src={added ? addCart : addedToCart} alt='' />
+        <figure onClick={() => toggleCart(product)}>
+          <img src={state.cart.includes(product) ? addedToCart : addCart} alt='' />
         </figure>
       </div>
     </div>
