@@ -15,7 +15,13 @@ const useInitialState = () => {
     setState({ ...state, cart: state.cart.filter((item) => item.id !== payload.id) });
   };
 
-  return { state, addToCart, removeFromCart };
+  const [toggleOrders, setToggleOrders] = useState(false);
+
+  const toggleOrdersHandler = () => {
+    setToggleOrders(!toggleOrders);
+  };
+
+  return { state, addToCart, removeFromCart, toggleOrders, toggleOrdersHandler };
 };
 
 export { useInitialState };

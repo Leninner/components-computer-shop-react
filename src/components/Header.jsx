@@ -10,10 +10,9 @@ import { MenuMobile } from '@components/MenuMobile';
 
 const Header = () => {
   const [toggle, setToggle] = React.useState(false);
-  const [toggleOrders, setToggleOrders] = React.useState(false);
   const [toggleMenuMobile, setToggleMenuMobile] = React.useState(false);
 
-  const { state } = useContext(AppContext);
+  const { state, toggleOrders, toggleOrdersHandler } = useContext(AppContext);
 
   const handleToggle = (state) => {
     state[1](!state[0]);
@@ -59,7 +58,7 @@ const Header = () => {
           <li className='navbar-email' onClick={() => handleToggle([toggle, setToggle])}>
             lenin@selecta.com
           </li>
-          <li className='navbar-shopping-cart' onClick={() => handleToggle([toggleOrders, setToggleOrders])}>
+          <li className='navbar-shopping-cart' onClick={() => toggleOrdersHandler()}>
             <img src={shoppingCart} alt='shopping cart' />
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
