@@ -5,7 +5,7 @@ import flechita from '@icons/flechita.svg';
 import { AppContext } from '@context/AppContext';
 
 const MyOrder = () => {
-  const { state, toggleOrdersHandler, toggleOrders } = useContext(AppContext);
+  const { state, toggleOrdersHandler } = useContext(AppContext);
 
   const sumTotal = () => {
     const reducer = (acumulador, currentValue) => acumulador + currentValue.price;
